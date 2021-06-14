@@ -1,0 +1,265 @@
+h1, h2, h3 {
+  font-weight: bolder;
+
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+/* nav bar */
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Ubuntu";
+  margin-left: 6rem;
+  color: rgb(445, 325, 325);
+}
+.navbar-brand:hover{
+  transform: scale(1.04);
+  color: #f3bda1;
+  transition: 0.8s;
+}
+.navbar {
+  padding: 0 0 0.3rem;
+  right: 0; left: 0; top: 0;
+  background: #ff6e7f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f8a488, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f8a488, #ff6e7f);
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.navbar-nav{
+  margin-right: 5rem;
+}
+.nav-item {
+  padding: 0 1.5rem;
+}
+.nav-item:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+a.nav-link:hover{
+  background: rgb(236, 213, 0);
+  border-radius: 2rem;
+}
+
+/* title section */
+#title {
+  /*background-color: gray;*/
+  background: #ff6e7f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#dbf6e9,#ffcead);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dbf6e9,#ffcead );
+  color: #fff;
+  margin-top: 4rem;
+}
+
+.big-heading {
+    color: #000;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.title-image {
+  border-radius: 20px;
+  position: absolute;
+}
+
+.container-fluid {
+  padding: 8% 15% 7%;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.title-image {
+  width: 100%;
+}
+
+#rzp-button1 {
+  padding: 0.8rem 3.2rem;
+  background: #480032;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff6f6;
+  border: none;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+
+#rzp-button1:hover {
+  color: #4ce438;
+  background: #fff6f6;
+}
+
+/* features */
+#features {
+  padding: 7% 15%;
+  background-color: #fffed5;
+  z-index: 1;
+  position: relative;
+}
+
+.feature-title{
+  font-size: 1.3rem;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
+  margin-bottom: 1rem;
+}
+
+
+ #icon1 {
+  color: #ADFF2F;
+}
+#icon1:hover {
+  color: #00c40d;
+}
+#icon2 {
+  color: #87CEFA;
+}
+#icon2:hover {
+  color: blue;
+}
+#icon3 {
+  color: pink;
+}
+#icon3:hover {
+  color: red;
+}
+
+
+p {
+  color: #8f8f8f;
+}
+
+/* testimonials */
+#testimonials {
+  background-color: #ef8172;
+  text-align: center;
+  color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* call to action*/
+#cta {
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15% 7%;
+}
+
+/* footer */
+
+#footer {
+  text-align: center;
+  padding: 0 5%;
+  /*background-color: #ffd1e1;*/
+  background: #ff6e7f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f8a488,#ff6e7f);
+  background: linear-gradient(to right, #f8a488, #ff6e7f);
+}
+
+.social-logo {
+  margin: 40px 30px;
+  font-size: 2rem;
+}
+
+
+.logo1 {
+  color: #4f42ff;
+}
+.logo2 {
+  color: #e6007b;
+}
+
+.logo3 {
+  color: #00a8fa;
+}
+
+.logo4 {
+   color: #ff293c;
+}
+
+.social-logo:hover {
+  color: purple;
+}
+
+.p1, .p2 {
+  color: #fff;
+  margin: 9px;
+}
+
+
+/* responsive */
+@media (max-width:990px) {
+  .title-image {
+    position: static;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 375px) {
+  .container-fluid {
+    padding: 3% 15% 7%;
+  }
+}
+@media (max-width: 595px) {
+  .social-logo {
+    margin: 40px 10px;
+    font-size: 1.40rem;
+  }
+  .p1, .p2 {
+    font-size: 14px;
+  }
+}
+
+
+.title-image {
+
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;
+  }
+
+  img:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+  }

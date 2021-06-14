@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happiness</title>
+  <link rel="icon" href="https://media.istockphoto.com/vectors/emoji-happiness-icon-element-of-colored-emoji-icon-for-mobile-concept-vector-id1034607168">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <!-- Font awesoe cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!--internal CSS-->
+  <link rel="stylesheet" href="style.css">
+
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <style>
+    #button {
+      display: inline-block;
+      background-color: #f6b8b8;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 4px;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      transition: background-color .3s,
+        opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+    }
+
+    #button::after {
+      content: "\f077";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+    }
+
+    #button:hover {
+      cursor: pointer;
+      background-color: #333;
+    }
+
+    #button:active {
+      background-color: #555;
+    }
+
+    #button.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #rzp-button1 {
+      background-color: #c449c2;
+      color: #ffffff;
+      border: 2px solid transparent;
+      font-family: 'Poppins', sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 4px;
+      line-height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Back to top button -->
+  <a title="scroll to top" id="button"></a>
+
+  <!-- Nav Bar -->
+  <div class="main_header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><i class="fas fa-hand-holding-usd"> </i> DONATE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#title">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <section class="coloured-section" id="title">
+    <div class="container-fluid">
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">“We ourselves feel that what we are doing is just a drop in the ocean. But the ocean would be less because of that missing drop.”.. Mother Teresa.</h1>
+          <div>
+
+              <!-- razorpay -->
+            <form>
+            <button id="rzp-button1" style="font-size: 1.8rem;  background: #480032;  padding: 0.8rem 3.2rem;  font-weight: bold;  border: none;line-height: 3rem;  text-transform: capitalize;  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+              -webkit-transition: all 0.3s ease 0s;
+              transition: all 0.3s ease 0s;
+              cursor: pointer;
+              border-radius: 4.5rem;
+              outline: none;">Donate</button>
+              <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+              <script>
+                var options = {
+                  "key": "rzp_test_2R5BCxVL83T9WU", // Enter the Key ID generated from the Dashboard
+                  "amount": "10000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                  "currency": "INR",
+                  "name": "Gourav Mukherjee",
+                  "description": "One Step away to bring happiness",
+                  "handler": function(response) {
+                    if (typeof response.razorpay_payment_id == 'undefined' || response.razorpay_payment_id < 1) {
+                      swal({
+                        title: "Please try again later!",
+                        icon: "error",
+                        button: "Close",
+                      });
+                    } else {
+                      swal({
+                        title: "Thank You!",
+                        icon: "success",
+                        button: "Close",
+                      });
+                    }
+                  },
+                  "theme": {
+                    "color": "#f98404"
+                  }
+                };
+                var rzp1 = new Razorpay(options);
+                document.getElementById('rzp-button1').onclick = function(e) {
+                  rzp1.open();
+                  e.preventDefault();
+                }
+              </script>
+            </form>
+            <!-- razorpay -->
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-6">
+          <img class="title-image"
+            src="https://www.businessinsider.in/thumb/msid-78529842,width-600,resizemode-4,imgsize-35602/india/news/by-2021-as-many-as-150-million-people-likely-to-be-in-extreme-poverty-due-to-covid-19-world-bank/atul-pandey.jpg" alt="child-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x" id="icon1"></i>
+          <h3 class="feature-title"> Education.</h3>
+          <p>We work to ensure children are educated for life through collective efforts.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class=" icon fas fa-bullseye fa-4x" id="icon2"></i>
+          <h3 class="feature-title"> Nutrition</h3>
+          <p>We work to address the causes of malnutrition with special focus on children below 5 years</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x" id="icon3"></i>
+          <h3 class="feature-title"> Livelihood.</h3>
+          <p>Our livelihood interventions enable families to enhance income and provide better for their children.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+
+      <a href="https://www.facebook.com/gourav.mukherjee.92"><i class="fab fa-facebook-f social-logo logo1"></i><a>
+          <a href="https://www.linkedin.com/in/gourav-mukherjeee-8654891b0/"><i class="fab fa-linkedin social-logo logo3"></i></a>
+          <a href="mailto:gouravsuvo2@gmail.com"><i class="fas fa-envelope social-logo logo4"></i></a>
+          <p class="p1">“Small Efforts Make Big Changes.”</p>
+          <p class="p2">© Copyright 2021</p>
+          <p class="p2">Gourav Mukherjee</p>
+    </div>
+  </footer>
+
+
+</body>
+<script>
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, '300');
+  });
+</script>
+
+</html>
